@@ -12,6 +12,6 @@ def send_mail(to, subject, body):
             msg['SUBJECT'] = subject
             msg.set_content(body)
             server.send_message(msg)
-    except Exception:
-        print(Exception)
+    except Exception as e:
+        print(e)
         print('email error')
